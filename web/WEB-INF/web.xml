@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+    <!-- Servlet类路径 -->
+    <servlet>
+        <servlet-name>SignupAction</servlet-name>
+        <servlet-class>com.signup.SignupAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LoginAction</servlet-name>
+        <servlet-class>com.login.LoginAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>LogoutAction</servlet-name>
+        <servlet-class>com.logout.LogoutAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>UserIndexAction</servlet-name>
+        <servlet-class>com.userindex.UserIndexAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ContactAction</servlet-name>
+        <servlet-class>com.contact.ContactAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CostmarginAction</servlet-name>
+        <servlet-class>com.costmargin.CostmarginAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>OrdersAction</servlet-name>
+        <servlet-class>com.orders.OrdersAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProductAction</servlet-name>
+        <servlet-class>com.product.ProductAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PromgtAction</servlet-name>
+        <servlet-class>com.promgt.PromgtAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ProstorageAction</servlet-name>
+        <servlet-class>com.prostorage.ProstorageAction</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SpcartsAction</servlet-name>
+        <servlet-class>com.spcarts.SpcartsAction</servlet-class>
+    </servlet>
+
+    <!-- url路径 -->
+    <servlet-mapping>
+        <servlet-name>SignupAction</servlet-name>
+        <url-pattern>/servlet/SignuupAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginAction</servlet-name>
+        <url-pattern>/servlet/LoginAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LogoutAction</servlet-name>
+        <url-pattern>/servlet/LogoutAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UserIndexAction</servlet-name>
+        <url-pattern>/servlet/UserIndexAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ContactAction</servlet-name>
+        <url-pattern>/servlet/ContactAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CostmarginAction</servlet-name>
+        <url-pattern>/servlet/CostmarginAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>OrdersAction</servlet-name>
+        <url-pattern>/servlet/OrdersAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProductAction</servlet-name>
+        <url-pattern>/servlet/ProductAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PromgtAction</servlet-name>
+        <url-pattern>/servlet/PromgtAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ProstorageAction</servlet-name>
+        <url-pattern>/servlet/ProstorageAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SpcartsAction</servlet-name>
+        <url-pattern>/servlet/SpcartsAction</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置filter过滤器 -->
+    <filter>
+        <filter-name>MyFilter</filter-name>
+        <filter-class>com.filter.MyFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>MyFilter</filter-name>
+        <url-pattern>/product.jsp</url-pattern>
+    </filter-mapping>
+
+    <!-- First Page -->
+    <welcome-file-list>
+        <welcome-file>userlogin.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
